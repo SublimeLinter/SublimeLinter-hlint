@@ -1,18 +1,23 @@
 SublimeLinter-hlint
 =========================
 
-This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3) provides an interface to [hlint](https://github.com/joneshf/SublimeLinter-hlint). It will be used with files that have the “Haskell” syntax.
+This linter plugin for [SublimeLinter][SublimeLinter] provides an interface to [hlint][hlint]. It will be used with files that have the “Haskell” syntax.
 
 ## Installation
-SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here](https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Installation).
+SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][SublimeLinter Installation].
 
 ### Linter installation
 Before using this plugin, you must ensure that `hlint` is installed on your system. To install `hlint`, do the following:
 
+1. Ensure [cabal][cabal] is installed. The easiest way is to install the [haskell platform][haskell platform], as this gives you [cabal][cabal] also. If you'd like to install with some other method, these resources will help: [haskell][haskell], [cabal][cabal]
+1. Update cabal:
+    ```
+    cabal update
+    ```
 1. Install `hlint` with cabal:
-   ```
-   cabal install hlint
-   ```
+    ```
+    cabal install hlint
+    ```
 
 Once hlint is installed, you can proceed to install the SublimeLinter-hlint plugin if it is not yet installed.
 
@@ -33,8 +38,6 @@ For general information on how SublimeLinter works with settings, please see [Se
 |:------|:----------|
 |paths|Path to the cabal binary where hlint is installed.|
 
-In addition to the standard SublimeLinter settings, SublimeLinter-hlint provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline](https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Settings#inline-settings).
-
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
 
@@ -52,3 +55,10 @@ Please note that modications should follow these coding guidelines:
 - Please use descriptive variable names, no abbrevations unless they are very well known.
 
 Thank you for helping out!
+
+[SublimeLinter]: https://github.com/SublimeLinter/SublimeLinter3
+[hlint]: http://community.haskell.org/~ndm/hlint/
+[SublimeLinter Installation]: https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Installation
+[haskell platform]: http://www.haskell.org/platform/
+[haskell]: http://www.haskell.org/haskellwiki/Haskell
+[cabal]: http://www.haskell.org/cabal/

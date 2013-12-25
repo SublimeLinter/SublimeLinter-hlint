@@ -10,7 +10,7 @@
 
 """This module exports the Hlint plugin class."""
 
-from SublimeLinter.lint import Linter, util
+from SublimeLinter.lint import Linter
 
 
 class Hlint(Linter):
@@ -26,4 +26,3 @@ class Hlint(Linter):
     '''
     multiline = True
     tempfile_suffix = 'hs'
-    error_stream = util.STREAM_BOTH
