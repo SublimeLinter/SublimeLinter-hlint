@@ -22,21 +22,16 @@ Before using this plugin, you must ensure that `hlint` is installed on your syst
 Once hlint is installed, you can proceed to install the SublimeLinter-hlint plugin if it is not yet installed.
 
 ### Plugin installation
-Please use [Package Control](https://sublime.wbond.net/installation) to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
+Please use [Package Control][Package Control] to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
 
 To install via Package Control, do the following:
 
-1. Within Sublime Text, bring up the [Command Palette](http://docs.sublimetext.info/en/sublime-text-3/extensibility/command_palette.html) and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
+1. Within Sublime Text, bring up the [Command Palette][Command Palette] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
 1. When the plugin list appears, type `hlint`. Among the entries you should see `SublimeLinter-hlint`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
 ## Settings
-For general information on how SublimeLinter works with settings, please see [Settings](https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Settings). For information on generic linter settings, please see [Linter Settings](https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Linter-Settings).
-
-### Set up your hlint path
-|Setting|Description|
-|:------|:----------|
-|paths|Path to the cabal binary where hlint is installed.|
+For general information on how SublimeLinter works with settings, please see [Settings][SublimeLinter Settings]. For information on generic linter settings, please see [Linter Settings][SublimeLinter Linter Settings].
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
@@ -57,8 +52,12 @@ Please note that modications should follow these coding guidelines:
 Thank you for helping out!
 
 [SublimeLinter]: https://github.com/SublimeLinter/SublimeLinter3
-[hlint]: http://community.haskell.org/~ndm/hlint/
 [SublimeLinter Installation]: https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Installation
+[SublimeLinter Settings]: https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Settings
+[SublimeLinter Linter Settings]: https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Linter-Settings
+[Package Control]: https://sublime.wbond.net/installation
+[Command Palette]: http://docs.sublimetext.info/en/sublime-text-3/extensibility/command_palette.html
+[hlint]: http://community.haskell.org/~ndm/hlint/
 [haskell platform]: http://www.haskell.org/platform/
 [haskell]: http://www.haskell.org/haskellwiki/Haskell
 [cabal]: http://www.haskell.org/cabal/

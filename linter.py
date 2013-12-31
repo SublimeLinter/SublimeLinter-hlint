@@ -3,7 +3,7 @@
 # Linter for SublimeLinter3, a code checking framework for Sublime Text 3
 #
 # Written by Hardy Jones
-# Copyright (c) 2013 
+# Copyright (c) 2013
 #
 # License: MIT
 #
@@ -17,12 +17,17 @@ class Hlint(Linter):
 
     """Provides an interface to hlint."""
 
-    syntax = ('haskell', 'literate haskell', 'haskell-sublimehaskell')
+    syntax = ('haskell', 'haskell-sublimehaskell', 'literate haskell')
     cmd = 'hlint'
-    regex = r'''(?xi)
-        ^.+:(?P<line>\d+):\d+:\s*(?:(?P<error>Error)|(?P<warning>Warning)):\s*(?P<message>.+)$\r?\n
-        ^.+$\r?\n
-        ^\s*(?P<near>.+)$\r?\n
-    '''
+    regex = (
+        r'^.+:(?P<line>\d+):'
+        '(?P<col>\d+):\s*'
+        '(?:(?P<error>Error)|(?P<warning>Warning)):\s*'
+        '(?P<message>.+)$'
+    )
     multiline = True
-    tempfile_suffix = 'hs'
+    tempfile_suffix = {
+        'haskell': 'hs',
+        'haskell-sublimehaskell': 'hs',
+        'literate haskell': 'lhs'
+    }
