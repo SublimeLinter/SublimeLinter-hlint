@@ -7,4 +7,4 @@ This linter plugin for SublimeLinter provides an interface to hlint.
 Before this plugin will activate, you *must*
 follow the installation instructions here:
 
-https://github.com/joneshf/SublimeLinter-hlint
+https://github.com/SublimeLinter/SublimeLinter-hlint
