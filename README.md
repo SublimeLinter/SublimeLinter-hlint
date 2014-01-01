@@ -51,10 +51,10 @@ Please note that modications should follow these coding guidelines:
 
 Thank you for helping out!
 
-[SublimeLinter]: https://github.com/SublimeLinter/SublimeLinter3
-[SublimeLinter Installation]: https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Installation
-[SublimeLinter Settings]: https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Settings
-[SublimeLinter Linter Settings]: https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Linter-Settings
+[SublimeLinter]: http://sublimelinter.readthedocs.org
+[SublimeLinter Installation]: http://sublimelinter.readthedocs.org/en/latest/installation.html
+[SublimeLinter Settings]: http://sublimelinter.readthedocs.org/en/latest/settings.html
+[SublimeLinter Linter Settings]: http://sublimelinter.readthedocs.org/en/latest/linter_settings.html
 [Package Control]: https://sublime.wbond.net/installation
 [Command Palette]: http://docs.sublimetext.info/en/sublime-text-3/extensibility/command_palette.html
 [hlint]: http://community.haskell.org/~ndm/hlint/
