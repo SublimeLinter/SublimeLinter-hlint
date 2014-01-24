@@ -1,6 +1,8 @@
 SublimeLinter-hlint
 =========================
 
+[![Build Status](https://khancdn.eu/badges.php?service=https%3A%2F%2Ftravis-ci.org%2FSublimeLinter%2FSublimeLinter-hlint.png%3Fbranch%3Dmaster)](https://travis-ci.org/SublimeLinter/SublimeLinter-hlint)
+
 This linter plugin for [SublimeLinter][SublimeLinter] provides an interface to [hlint][hlint]. It will be used with files that have the “Haskell” syntax.
 
 ## Installation
