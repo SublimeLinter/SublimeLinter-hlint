@@ -14,7 +14,6 @@ from SublimeLinter.lint import Linter
 
 
 class Hlint(Linter):
-
     """Provides an interface to hlint."""
 
     syntax = ('haskell', 'haskell-sublimehaskell', 'literate haskell')
