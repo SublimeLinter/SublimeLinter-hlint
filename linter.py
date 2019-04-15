@@ -21,7 +21,7 @@ class Hlint(Linter):
     regex = (
         r'^.+:(?P<line>\d+):'
         '(?P<col>\d+):\s*'
-        '(?:(?P<error>Error)|(?P<warning>Warning)):\s*'
+        '(?:(?P<error>Error)|(?P<warning>Warning|Suggestion)):\s*'
         '(?P<message>.+)$'
     )
     multiline = True
