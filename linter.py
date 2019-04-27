@@ -20,9 +20,9 @@ class Hlint(Linter):
     cmd = 'hlint'
     regex = (
         r'^.+:(?P<line>\d+):'
-        '(?P<col>\d+):\s*'
-        '(?:(?P<error>Error)|(?P<warning>Warning|Suggestion)):\s*'
-        '(?P<message>.+)$'
+        r'(?P<col>\d+):\s*'
+        r'(?:(?P<error>Error)|(?P<warning>Warning|Suggestion)):\s*'
+        r'(?P<message>.+)$'
     )
     multiline = True
     tempfile_suffix = {
