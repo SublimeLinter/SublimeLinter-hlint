@@ -16,7 +16,9 @@ from SublimeLinter.lint import Linter
 class Hlint(Linter):
     """Provides an interface to hlint."""
 
-    syntax = ('haskell', 'haskell-sublimehaskell', 'literate haskell')
+    defaults = {
+        'selector': 'source.haskell'
+    }
     cmd = 'hlint'
     regex = (
         r'^.+:(?P<line>\d+):'
@@ -25,8 +27,4 @@ class Hlint(Linter):
         '(?P<message>.+)$'
     )
     multiline = True
-    tempfile_suffix = {
-        'haskell': 'hs',
-        'haskell-sublimehaskell': 'hs',
-        'literate haskell': 'lhs'
-    }
+    tempfile_suffix = 'hs'
