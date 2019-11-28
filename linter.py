@@ -10,21 +10,29 @@
 
 """This module exports the Hlint plugin class."""
 
-from SublimeLinter.lint import Linter
+import json
+from SublimeLinter.lint import Linter, LintMatch
 
 
 class Hlint(Linter):
     """Provides an interface to hlint."""
 
+    cmd = 'hlint ${args} --json -'
     defaults = {
         'selector': 'source.haskell'
     }
-    cmd = 'hlint'
-    regex = (
-        r'^.+:(?P<line>\d+):'
-        '(?P<col>\d+):\s*'
-        '(?:(?P<error>Error)|(?P<warning>Warning)):\s*'
-        '(?P<message>.+)$'
-    )
-    multiline = True
-    tempfile_suffix = 'hs'
+
+    def find_errors(self, output):
+        # type: (str) -> Iterator[LintMatch]
+        errors = json.loads(output)
+
+        for error in errors:
+            message = "{hint}. Found: {from}".format(**error)
+            if error['to']:
+                message += " Perhaps: {to}".format(**error)
+            yield LintMatch(
+                error_type=error['severity'].lower(),
+                line=error['startLine'] - 1,
+                col=error['startColumn'] - 1,
+                message=message
+            )
