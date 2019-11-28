@@ -14,6 +14,11 @@ import json
 from SublimeLinter.lint import Linter, LintMatch
 
 
+MYPY = False
+if MYPY:
+    from typing import Iterator
+
+
 class Hlint(Linter):
     """Provides an interface to hlint."""
 
