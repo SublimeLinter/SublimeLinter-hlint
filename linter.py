@@ -32,9 +32,9 @@ class Hlint(Linter):
         errors = json.loads(output)
 
         for error in errors:
-            message = "{hint}. Found: {from}".format(**error)
+            message = "{hint}.\nFound:   {from}".format(**error)
             if error['to']:
-                message += " Perhaps: {to}".format(**error)
+                message += "\nPerhaps: {to}".format(**error)
             yield LintMatch(
                 error_type=error['severity'].lower(),
                 line=error['startLine'] - 1,
