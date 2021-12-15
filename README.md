@@ -1,7 +1,7 @@
 SublimeLinter-hlint
 =========================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-hlint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-hlint)
+[![flake8](https://github.com/SublimeLinter/SublimeLinter-hlint/actions/workflows/flake8.yml/badge.svg)](https://github.com/SublimeLinter/SublimeLinter-hlint/actions/workflows/flake8.yml)
 
 This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to [hlint](http://community.haskell.org/~ndm/hlint/).
 It will be used with files that have the "Haskell" syntax.
